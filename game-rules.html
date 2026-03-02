@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Rules - Wordsnake English Hunter</title>
+<style>
+body { max-width: 800px; margin: 40px auto; padding: 20px; font-family: Arial, sans-serif; color: #333; }
+h1 { color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 10px; }
+h2 { color: #2c3e50; margin-top: 30px; }
+a { color: #2980b9; }
+.lang-switch { background: #2c3e50; padding: 15px; border-radius: 8px; margin-bottom: 30px; }
+.lang-switch a { color: white; margin-right: 20px; font-weight: bold; text-decoration: none; }
+.index { background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; }
+.index a { display: block; margin: 8px 0; }
+.section { margin-top: 40px; }
+hr { margin: 60px 0; border: 2px solid #2c3e50; }
+ul li, ol li { margin: 10px 0; }
+.tip { background: #d4edda; border-left: 4px solid #28a745; padding: 15px; border-radius: 4px; margin: 20px 0; }
+.warning { background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; border-radius: 4px; margin: 20px 0; }
+.info { background: #cce5ff; border-left: 4px solid #004085; padding: 15px; border-radius: 4px; margin: 20px 0; }
+</style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <a href="#english">🇬🇧 English</a>
+  <a href="#spanish">🇪🇸 Español</a>
+</div>
+
+<!-- ENGLISH VERSION -->
+<div id="english">
+<h1>🐍 Game Rules: Wordsnake English Hunter</h1>
+
+<div class="index">
+<strong>Table of Contents:</strong>
+<a href="#en1">1. Main Objective</a>
+<a href="#en2">2. Movement Mechanics</a>
+<a href="#en3">3. Scoring System</a>
+<a href="#en4">4. Lives and Penalties</a>
+<a href="#en5">5. Survival Mechanisms</a>
+<a href="#en6">6. Visual Elements and Atmosphere</a>
+<a href="#en7">7. Game Over</a>
+</div>
+
+<div class="section" id="en1">
+<h2>1. Main Objective</h2>
+<p>The goal is to spell English words sequentially. At the top of the screen, a target word (e.g., <strong>"APPLE"</strong>) and its translation (e.g., <strong>"MANZANA"</strong>) are displayed. You must guide the snake to "eat" the letters in the correct order.</p>
+</div>
+
+<div class="section" id="en2">
+<h2>2. Movement Mechanics</h2>
+<p><strong>Directional Control:</strong> The snake moves continuously. The player changes direction by tapping or clicking on the game area; the snake's head will gradually turn towards that point.</p>
+<p><strong>Dynamic Speed:</strong> The game starts at a base speed defined in the settings, but the speed increases as you find more words.</p>
+<ul>
+<li>Every 5 words found, the speed increases by <strong>8%</strong>.</li>
+<li>After exceeding <strong>200 words</strong>, speed increments become more aggressive (<strong>20% every 50 words</strong>).</li>
+</ul>
+<p><strong>Camera:</strong> The camera follows the snake's head within a world of 5000 units.</p>
+</div>
+
+<div class="section" id="en3">
+<h2>3. Scoring System</h2>
+<div class="info">
+<ul>
+<li>🔤 <strong>Correct Letter:</strong> Every time you eat the next letter in the sequence, you earn <strong>20 points</strong>.</li>
+<li>✅ <strong>Word Completed:</strong> Upon finishing the spelling of the entire word, you receive a <strong>100-point bonus</strong> and a new word is generated.</li>
+</ul>
+</div>
+</div>
+
+<div class="section" id="en4">
+<h2>4. Lives and Penalties</h2>
+<p>You lose 1 life in the following cases:</p>
+<div class="warning">
+<ul>
+<li>❌ <strong>Incorrect Letter:</strong> If you eat a letter that is not the next one in the current word.</li>
+<li>🧱 <strong>Wall Collision:</strong> If the snake's head touches the edges of the game map.</li>
+<li>🐍 <strong>Self-Collision:</strong> If the snake bites its own tail (the system ignores collisions with segments closest to the head to allow for tight turns).</li>
+</ul>
+</div>
+</div>
+
+<div class="section" id="en5">
+<h2>5. Survival Mechanisms (Rescue)</h2>
+<div class="tip">
+<p>⭐ <strong>Grace Period (Invincibility):</strong> At the start of the game or after losing a life, the snake becomes translucent and invincible for a few seconds. In this state, you cannot die by hitting walls or yourself.</p>
+<p>❄️ <strong>Safety Freeze:</strong> After closing an "Incorrect Letter" or "Collision" message, the game freezes for 2 seconds and clears letters near the head to give the player time to react.</p>
+<p>📺 <strong>Rewarded Ads:</strong> If you lose a life and meet the requirements, you can watch a video ad to earn an extra life.</p>
+</div>
+</div>
+
+<div class="section" id="en6">
+<h2>6. Visual Elements and Atmosphere</h2>
+<ul>
+<li>🌙 <strong>Celestial Cycle:</strong> The moon changes phase every 5 words found. Upon reaching the final phase (stage 8), it turns into a radiant sun.</li>
+<li>🌧️ <strong>Weather:</strong> Every 10 words found, a rain effect is activated. If you have found more than 200 words, the rain becomes a storm.</li>
+<li>📏 <strong>Growth:</strong> The snake grows slightly longer for every 100 points earned, making the game more difficult as you progress.</li>
+</ul>
+</div>
+
+<div class="section" id="en7">
+<h2>7. Game Over</h2>
+<p>The game ends when your lives reach 0. At that moment, your <strong>High Score</strong> is registered in your user profile and the <strong>Global Ranking</strong> is updated.</p>
+<div class="info">
+📌 <strong>Note:</strong> In the future, rewards will be given to users with the High Score of the week, but this is currently not implemented.
+</div>
+</div>
+</div>
+
+<hr>
+
+<!-- SPANISH VERSION -->
+<div id="spanish">
+<h1>🐍 Reglas del Juego: Wordsnake English Hunter</h1>
+
+<div class="index">
+<strong>Índice:</strong>
+<a href="#es1">1. Objetivo Principal</a>
+<a href="#es2">2. Mecánica de Movimiento</a>
+<a href="#es3">3. Sistema de Puntuación</a>
+<a href="#es4">4. Vidas y Penalizaciones</a>
+<a href="#es5">5. Mecanismos de Supervivencia</a>
+<a href="#es6">6. Elementos Visuales y Ambiente</a>
+<a href="#es7">7. Fin del Juego</a>
+</div>
+
+<div class="section" id="es1">
+<h2>1. Objetivo Principal</h2>
+<p>El objetivo es deletrear palabras en inglés de forma secuencial. En la parte superior de la pantalla se muestra una palabra objetivo (ej. <strong>"APPLE"</strong>) y su traducción (ej. <strong>"MANZANA"</strong>). Debes dirigir a la serpiente para que "coma" las letras en el orden correcto.</p>
+</div>
+
+<div class="section" id="es2">
+<h2>2. Mecánica de Movimiento</h2>
+<p><strong>Control Direccional:</strong> La serpiente se mueve continuamente. El jugador cambia su dirección tocando o haciendo clic en el área de juego; la cabeza de la serpiente girará gradualmente hacia ese punto.</p>
+<p><strong>Velocidad Dinámica:</strong> El juego comienza con una velocidad base definida en los ajustes, pero la velocidad aumenta conforme encuentras más palabras.</p>
+<ul>
+<li>Cada 5 palabras encontradas, la velocidad sube un <strong>8%</strong>.</li>
+<li>Al superar las <strong>200 palabras</strong>, los incrementos son más agresivos (<strong>20% cada 50 palabras</strong>).</li>
+</ul>
+<p><strong>Cámara:</strong> La cámara sigue a la cabeza de la serpiente dentro de un mundo de 5000 unidades.</p>
+</div>
+
+<div class="section" id="es3">
+<h2>3. Sistema de Puntuación</h2>
+<div class="info">
+<ul>
+<li>🔤 <strong>Letra Correcta:</strong> Cada vez que comes la letra correcta, ganas <strong>20 puntos</strong>.</li>
+<li>✅ <strong>Palabra Completada:</strong> Al terminar de deletrear la palabra completa, recibes un bono de <strong>100 puntos</strong> y se genera una nueva palabra.</li>
+</ul>
+</div>
+</div>
+
+<div class="section" id="es4">
+<h2>4. Vidas y Penalizaciones</h2>
+<p>Pierdes 1 vida en los siguientes casos:</p>
+<div class="warning">
+<ul>
+<li>❌ <strong>Letra Incorrecta:</strong> Si comes una letra que no es la que sigue en la palabra actual.</li>
+<li>🧱 <strong>Choque con Paredes:</strong> Si la cabeza de la serpiente toca los bordes del mapa.</li>
+<li>🐍 <strong>Auto-colisión:</strong> Si la serpiente muerde su propia cola (el sistema ignora los segmentos más cercanos a la cabeza para permitir giros cerrados).</li>
+</ul>
+</div>
+</div>
+
+<div class="section" id="es5">
+<h2>5. Mecanismos de Supervivencia (Rescate)</h2>
+<div class="tip">
+<p>⭐ <strong>Periodo de Gracia (Invencibilidad):</strong> Al iniciar el juego o después de perder una vida, la serpiente se vuelve traslúcida e invencible por unos segundos.</p>
+<p>❄️ <strong>Congelación de Seguridad:</strong> Después de cerrar el mensaje de error, el juego se congela 2 segundos y limpia las letras cercanas a la cabeza.</p>
+<p>📺 <strong>Publicidad Recompensada:</strong> Si pierdes una vida y cumples los requisitos, puedes ver un video publicitario para obtener una vida extra.</p>
+</div>
+</div>
+
+<div class="section" id="es6">
+<h2>6. Elementos Visuales y Ambiente</h2>
+<ul>
+<li>🌙 <strong>Ciclo Celestial:</strong> La luna cambia de fase cada 5 palabras. Al llegar a la fase final (etapa 8), se convierte en un sol radiante.</li>
+<li>🌧️ <strong>Clima:</strong> Cada 10 palabras se activa lluvia. Si superas las 200 palabras, se convierte en tormenta.</li>
+<li>📏 <strong>Crecimiento:</strong> La serpiente crece por cada 100 puntos obtenidos, haciendo el juego más difícil.</li>
+</ul>
+</div>
+
+<div class="section" id="es7">
+<h2>7. Fin del Juego (Game Over)</h2>
+<p>El juego termina cuando las vidas llegan a 0. Se registra tu <strong>High Score</strong> en tu perfil y se actualiza el <strong>Ranking Global</strong>.</p>
+<div class="info">
+📌 <strong>Nota:</strong> Más adelante se recompensará a los usuarios con el High Score de la semana, pero por ahora no está implementado.
+</div>
+</div>
+</div>
+
+</body>
+</html>
